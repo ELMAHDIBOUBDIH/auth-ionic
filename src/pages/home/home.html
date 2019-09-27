@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-label>Username : {{user.username}}</ion-label>
+    <ion-label>mail : {{user.email}}</ion-label>
+    <ion-label>access : {{user.role}}</ion-label>
+  </ion-list>
+  <button ion-button secondary (click)="logout()">Logout</button>
+</ion-content>
